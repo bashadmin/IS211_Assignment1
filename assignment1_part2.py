@@ -1,11 +1,15 @@
 
 class Book:
     def __init__(self, author, title):
-        pass
+        self.title = title 
+        self.author = author
     
     def display(self):
-        pass
+        print("{}, written by {}".format
+        (self.title,self.author))
 
 
 if __name__ == "__main__":
-    pass
+    theHobbit = Book("J.R.R Tolken", "The Two Towers")
+    theHobbit.display()
+
